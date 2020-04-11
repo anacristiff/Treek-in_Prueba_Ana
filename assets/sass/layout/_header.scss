@@ -1,0 +1,50 @@
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.button-container {
+  a {
+    font-weight: $bold;
+    color: $raising-black;
+    padding-right: 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $silver-chalice;
+    }
+  }
+}
+
+.hero {
+  padding-top: 2rem;
+  height: 450px;
+  background-image: url('../images/bg-hero.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: contain;
+
+  p {
+    line-height: 1.875rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+   .hero { 
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero { 
+    height: 866px;
+    padding-top: 5rem;
+  }
+}

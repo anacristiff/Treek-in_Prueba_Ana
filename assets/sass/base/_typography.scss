@@ -1,0 +1,49 @@
+
+h1 {
+  @include relative-converter (font-size, rem, $xxxxx-large, 16);
+  font-weight: $bold;
+
+  @media only screen and (max-width: 768px) {
+    @include relative-converter (font-size, rem, $xxx-large, 16);
+  }
+}
+
+h2 {
+  @include relative-converter (font-size, rem, $xxx-large, 16);
+  font-weight: $bold;
+
+  @media only screen and (max-width: 768px) {
+    @include relative-converter (font-size, rem, $x-large, 16);
+
+  }
+}
+
+h3 {
+  @include relative-converter (font-size, rem, $x-large, 16);
+  font-weight: $bold;
+
+  @media only screen and (max-width: 768px) {
+    @include relative-converter (font-size, rem, $large, 16);
+
+  }
+}
+
+h4 {
+  @include relative-converter (font-size, rem, $xxxx-large, 16);
+  font-weight: $bold;
+
+  @media only screen and (max-width: 768px) {
+    @include relative-converter (font-size, rem, $xx-large, 16);
+
+  } 
+}
+
+h5 {
+  @include relative-converter (font-size, rem, $x-large, 16);
+  font-weight: $regular;
+
+  @media only screen and (max-width: 768px) {
+    @include relative-converter (font-size, rem, $large, 16);
+
+  } 
+}

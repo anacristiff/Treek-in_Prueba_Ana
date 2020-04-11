@@ -1,0 +1,73 @@
+.caracteristicas {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__text {
+
+    p {
+      padding-top: 1rem;
+      font-size: $small;
+    }
+  }
+}
+
+.precios {
+  background-image: url('../images/bg-price-mobile.svg');
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 893px;
+
+  h2 {
+    padding-top: 8rem;
+    color: $white;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .caracteristicas {
+    margin-bottom: 4rem;
+  }
+
+  .precios {
+    background-image: url('../images/bg-price.svg');
+    background-size: cover;
+    background-color: transparent;
+
+    h2 {
+      padding-top: 13.813rem;
+    }
+  }
+}
+
+.coral-1 , .coral-2, .coral-3, .blue-1, .blue-2, .blue-3 {
+  animation-name: scale-bars;
+  animation-duration: 2s;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.coral-1 , .coral-2, .coral-3 {
+  animation-delay: 1s;
+}
+
+.blue-1, .blue-2, .blue-3 {
+  animation-delay: 2s;
+}
+
+
+
+
+@keyframes scale-bars {
+  0% {transform: scaleY(0);}
+  100% {transform: scaleY(1);}
+}

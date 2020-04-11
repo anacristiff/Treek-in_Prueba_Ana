@@ -1,0 +1,16 @@
+.button {
+  background-color: $ball-blue;
+  padding: 8px 17px;
+  border: none;
+  color: $white;
+  font-weight: $bold;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $middle-blue;
+  }
+
+  &:focus {
+    background-color: $silver-chalice;
+  }
+}

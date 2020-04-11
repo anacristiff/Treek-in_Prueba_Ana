@@ -1,0 +1,61 @@
+.cards-container {
+  display: flex;
+  margin-top: 57px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  width: 367px;
+  // max-height: 507px;
+  padding: 37px;
+  position: relative;
+
+  @media only screen and (width: 768px) {
+    width: 350px;
+  }
+
+  &__list {
+    line-height: 2rem;
+    padding-left: 1.2rem;
+  }
+
+  &:hover {
+    box-shadow: -0px 20px 16px rgba(0,0,0,0.5);
+    animation-name: mover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+}
+
+@keyframes mover {
+  0% {left: 0px; bottom: 0px;}
+  100% {left: 5px; bottom: 5px;}
+}
+
+.divider {
+  border-bottom: 1px solid $lavender-gray;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.card-button {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-button-container {
+    margin-top: auto;
+  }  
+}
+
+// @media only screen and (width: 768px) {
+//   .tarjeta {
+//     width: 350px;
+//   }
+// }
+
